@@ -76,7 +76,7 @@
 
 - (void)refreshData {
     if ( ![ReachabilityManager hasInternetConnection] ) {
-        [[[UIAlertView alloc] initWithTitle:@"No access to the Internet, connect to the internet" message:nil delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+        [[[UIAlertView alloc] initWithTitle:@"Нет доступа к интернету, подключитесь к Wi-Fi или 4G" message:nil delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
         [refreshControl endRefreshing];
         return;
     }
@@ -86,7 +86,7 @@
 }
 - (void)loadMore {
     if ( ![ReachabilityManager hasInternetConnection] ) {
-        [[[UIAlertView alloc] initWithTitle:@"No access to the Internet, connect to the internet" message:nil delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+        [[[UIAlertView alloc] initWithTitle:@"Нет доступа к интернету, подключитесь к Wi-Fi или 4G" message:nil delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
         [refreshControl endRefreshing];
         return;
     }
@@ -160,7 +160,7 @@
     if ( section == 0 ) {
         if ( [self getFilteredArray].count == 0 ) return 0;
         int cnt = (int)[self getFilteredArray].count;
-        if ( cnt%10 == 0 ) return cnt/10;
+        if ( cnt%10 == 0 ) return (cnt/10)*4;
         return 1+(int)(cnt/10);
     }
     else {
@@ -270,6 +270,9 @@
     [refreshControl endRefreshing];
     if ( ![error isEqualToString:@""] ) {
         [[[UIAlertView alloc] initWithTitle:error message:nil delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+    }
+    if ( [_delegate respondsToSelector:@selector(downloadError)] ) {
+        [_delegate downloadError];
     }
 }
 

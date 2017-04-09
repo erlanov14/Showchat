@@ -17,6 +17,7 @@
 - (void)tableCellDidSelectedWithIndex:(int)index array:(NSMutableArray*)array;
 - (void)storySelected:(StoryObj*)story holderView:(UIView*)holderView image:(UIImage*)image;
 - (void)dataDownloaded;
+- (void)downloadError;
 
 @end
 

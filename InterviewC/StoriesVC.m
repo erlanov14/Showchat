@@ -10,6 +10,7 @@
 #import "StoriesStore.h"
 #import "StoriesTableViewHelper.h"
 #import "RandomPlayerTransitioningDelegate.h"
+#import "ScrollVC.h"
 #import "ChatVC.h"
 #import "Defs.h"
 
@@ -17,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIView *loadingView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityView;
+@property (weak, nonatomic) IBOutlet UIButton *reloadBtn;
 
 @end
 
@@ -37,7 +39,15 @@
 
     randomPlayerTransitioningDelegate = [RandomPlayerTransitioningDelegate new];
     [_activityView startAnimating];
+    _reloadBtn.hidden = YES;
 }
+
+- (IBAction)reloadBtnTouched:(id)sender {
+    _reloadBtn.hidden = YES;
+    _activityView.hidden = NO;
+    [storiesStore refreshData];
+}
+
 
 
 #pragma mark - StoriesTableViewHelper Delegate
@@ -49,11 +59,17 @@
 //    NSLog(@"%f %f %f %f", newR.origin.x, newR.origin.y, newR.size.width, newR.size.height);
     randomPlayerTransitioningDelegate.originFrame = newR;
     
-    ChatVC *chatVC = [self.storyboard instantiateViewControllerWithIdentifier:@"ChatVC"];
-    chatVC.story = story;
-    chatVC.initialImage = image;
-    chatVC.transitioningDelegate = randomPlayerTransitioningDelegate;
-    [self presentViewController:chatVC animated:YES completion:nil];
+//    ChatVC *chatVC = [self.storyboard instantiateViewControllerWithIdentifier:@"ChatVC"];
+//    chatVC.story = story;
+//    chatVC.initialImage = image;
+//    chatVC.transitioningDelegate = randomPlayerTransitioningDelegate;
+//    [self presentViewController:chatVC animated:YES completion:nil];
+    
+    ScrollVC *scrollVC = [self.storyboard instantiateViewControllerWithIdentifier:@"ScrollVC"];
+    scrollVC.story = story;
+    scrollVC.initialImage = image;
+    scrollVC.transitioningDelegate = randomPlayerTransitioningDelegate;
+    [self presentViewController:scrollVC animated:YES completion:nil];
 }
 - (void)dataDownloaded {
     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
@@ -61,6 +77,10 @@
     } completion:^(BOOL finished) {
         [_loadingView removeFromSuperview];
     }];
+}
+- (void)downloadError {
+    _reloadBtn.hidden = NO;
+    _activityView.hidden = YES;
 }
 
 

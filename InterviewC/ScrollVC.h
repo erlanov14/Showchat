@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StoryObj.h"
 
 @interface ScrollVC : UIViewController
+
+@property (nonatomic,strong) StoryObj *story;
+@property (nonatomic,strong) UIImage *initialImage;
 
 @end

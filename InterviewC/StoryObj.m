@@ -20,6 +20,7 @@
         self.author = @"";
         self.backgroundImage = @"";
         self.watchCount = 0;
+        self.subtitle = @"";
         
         self.messages = [NSMutableArray new];
         
@@ -47,6 +48,7 @@
         self.author = FREESTRING_OR_STRING(json[@"author"]);
         self.backgroundImage = FREESTRING_OR_STRING(json[@"background"]);
         self.watchCount = [ZERO_OR_STRING(json[@"watch_count"]) intValue];
+        self.subtitle = FREESTRING_OR_STRING(json[@"subtitle"]);
 
         self.messages = [NSMutableArray new];
 

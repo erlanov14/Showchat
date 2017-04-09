@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageInImgCell" rowHeight="158" id="ttU-WD-4km" customClass="MessageInImgCell">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="158"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageInImgCell" rowHeight="227" id="ttU-WD-4km" customClass="MessageInImgCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="227"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ttU-WD-4km" id="pbB-d6-TMu">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="157"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="226.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiffany" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="img-Rx-oQO">
-                        <rect key="frame" x="18" y="120" width="41.5" height="29.5"/>
+                        <rect key="frame" x="18" y="200" width="41.5" height="18.5"/>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                         <color key="textColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZU-yJ-SrA">
-                        <rect key="frame" x="16" y="8" width="148" height="108"/>
+                        <rect key="frame" x="16" y="8" width="188" height="188"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lmq-wX-G3e">
-                                <rect key="frame" x="4" y="4" width="140" height="100"/>
+                                <rect key="frame" x="4" y="4" width="180" height="180"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Xg7-f4-yzF"/>
-                                    <constraint firstAttribute="width" constant="140" id="g1E-1u-Bfg"/>
+                                    <constraint firstAttribute="height" constant="180" id="Xg7-f4-yzF"/>
+                                    <constraint firstAttribute="width" constant="180" id="g1E-1u-Bfg"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -59,7 +59,7 @@
                 <outlet property="imgV" destination="Lmq-wX-G3e" id="2kX-MB-MLz"/>
                 <outlet property="nameLbl" destination="img-Rx-oQO" id="Ez5-Il-mMM"/>
             </connections>
-            <point key="canvasLocation" x="-34.5" y="157"/>
+            <point key="canvasLocation" x="-34.5" y="191.5"/>
         </tableViewCell>
     </objects>
 </document>

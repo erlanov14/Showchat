@@ -17,7 +17,7 @@
 //#import "WaitingView.h"
 
 
-#define BASE_URL @"http://127.0.0.1:8003/"
+#define BASE_URL @"http://192.168.0.102:8003/"
 
 
 

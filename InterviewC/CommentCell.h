@@ -1,5 +1,5 @@
 //
-//  PreloaderVC.h
+//  CommentCell.h
 //  InterviewC
 //
 //  Created by Yerassyl Yerlanov on 09.04.17.
@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "StoryObj.h"
+#import "ChatObj.h"
 
-@interface PreloaderVC : UIViewController
+@interface CommentCell : UITableViewCell
 
-@property (nonatomic,strong) StoryObj *story;
+- (void)initWithChatObj:(ChatObj*)chatObj;
 
 @end

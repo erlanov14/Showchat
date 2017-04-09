@@ -12,6 +12,7 @@
 #import "ReachabilityManager.h"
 #import "MessageInImgCell.h"
 #import "MessageOutImgCell.h"
+#import "CommentCell.h"
 #import "ChatObj.h"
 #import "Defs.h"
 
@@ -72,7 +73,7 @@
 
 - (void)refreshData {
     if ( ![ReachabilityManager hasInternetConnection] ) {
-        [[[UIAlertView alloc] initWithTitle:@"No access to the Internet, connect to the internet" message:nil delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+        [[[UIAlertView alloc] initWithTitle:@"Нет доступа к интернету, подключитесь к Wi-Fi или 4G" message:nil delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
         [refreshControl endRefreshing];
         return;
     }
@@ -104,7 +105,7 @@
     if ( indexPath.section == 0 ) {
         ChatObj *chatO = chatArray[indexPath.row];
         if ( chatO.isIncoming ) {
-            if ( !chatO.isImage ) {
+            if ( !chatO.isImage && !chatO.isComment ) {
                 static NSString *CellIdentifier = @"MessageInCell";
                 
                 MessageInCell *cell = (MessageInCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -117,7 +118,7 @@
                 
                 return cell;
             }
-            else {
+            else if ( chatO.isImage ) {
                 static NSString *CellIdentifier = @"MessageInImgCell";
                 
                 MessageInImgCell *cell = (MessageInImgCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -132,7 +133,7 @@
             }
         }
         else {
-            if ( !chatO.isImage ) {
+            if ( !chatO.isImage && !chatO.isComment ) {
                 static NSString *CellIdentifier = @"MessageOutCell";
                 
                 MessageOutCell *cell = (MessageOutCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -145,7 +146,7 @@
                 
                 return cell;
             }
-            else {
+            else if ( chatO.isImage ) {
                 
                 static NSString *CellIdentifier = @"MessageOutImgCell";
                 
@@ -161,6 +162,18 @@
             }
             
         }
+        
+        static NSString *CellIdentifier = @"CommentCell";
+        
+        CommentCell *cell = (CommentCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if (cell == nil) {
+            [tableView registerNib:[UINib nibWithNibName:@"CommentCell" bundle:nil] forCellReuseIdentifier:@"CommentCell"];
+            cell = (CommentCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        }
+        
+        [cell initWithChatObj:chatO];
+        
+        return cell;
         
     }
     return nil;

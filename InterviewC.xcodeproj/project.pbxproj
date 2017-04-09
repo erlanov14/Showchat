@@ -55,6 +55,8 @@
 		874F999B1E977786000E018F /* AnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 874F999A1E977786000E018F /* AnimationHelper.m */; };
 		876F95081E9A464700A922C3 /* PreloaderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 876F95071E9A464700A922C3 /* PreloaderVC.m */; };
 		876F950C1E9A4A4B00A922C3 /* ScrollVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 876F950B1E9A4A4B00A922C3 /* ScrollVC.m */; };
+		876F950F1E9A69D900A922C3 /* CommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 876F950E1E9A69D900A922C3 /* CommentCell.m */; };
+		876F95111E9A69E400A922C3 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 876F95101E9A69E400A922C3 /* CommentCell.xib */; };
 		DA63930FBFF6E3106B94D30D /* libPods-InterviewC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB165BC9437594BC40163F7F /* libPods-InterviewC.a */; };
 /* End PBXBuildFile section */
 
@@ -140,6 +142,9 @@
 		876F95071E9A464700A922C3 /* PreloaderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreloaderVC.m; sourceTree = "<group>"; };
 		876F950A1E9A4A4B00A922C3 /* ScrollVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollVC.h; sourceTree = "<group>"; };
 		876F950B1E9A4A4B00A922C3 /* ScrollVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollVC.m; sourceTree = "<group>"; };
+		876F950D1E9A69D900A922C3 /* CommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentCell.h; sourceTree = "<group>"; };
+		876F950E1E9A69D900A922C3 /* CommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentCell.m; sourceTree = "<group>"; };
+		876F95101E9A69E400A922C3 /* CommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 		D3326C4EB3701BDD9A8BB4D5 /* Pods-InterviewC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InterviewC/Pods-InterviewC.debug.xcconfig"; sourceTree = "<group>"; };
 		EB165BC9437594BC40163F7F /* libPods-InterviewC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InterviewC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -257,6 +262,9 @@
 				87255C721E924F6E0071EA79 /* MessageOutImgCell.h */,
 				87255C731E924F6E0071EA79 /* MessageOutImgCell.m */,
 				87255C751E924F770071EA79 /* MessageOutImgCell.xib */,
+				876F950D1E9A69D900A922C3 /* CommentCell.h */,
+				876F950E1E9A69D900A922C3 /* CommentCell.m */,
+				876F95101E9A69E400A922C3 /* CommentCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -458,6 +466,7 @@
 				87255C3B1E91413B0071EA79 /* StoriesCell1.xib in Resources */,
 				87255C711E924EB90071EA79 /* england_ss1.jpg in Resources */,
 				87255C661E919E050071EA79 /* 0913_warren.jpg in Resources */,
+				876F95111E9A69E400A922C3 /* CommentCell.xib in Resources */,
 				87255C421E9143480071EA79 /* fake_g.jpeg in Resources */,
 				87255C761E924F770071EA79 /* MessageOutImgCell.xib in Resources */,
 			);
@@ -545,6 +554,7 @@
 				87255C3E1E9141460071EA79 /* StoriesCell2.m in Sources */,
 				87255C1C1E913D6B0071EA79 /* Defs.m in Sources */,
 				87255C621E9192EE0071EA79 /* FakeGenerator.m in Sources */,
+				876F950F1E9A69D900A922C3 /* CommentCell.m in Sources */,
 				874F99981E977761000E018F /* RandomPlayerTransitioningDelegate.m in Sources */,
 				874F99971E977761000E018F /* RandomPlayerPresentAnimationController.m in Sources */,
 				87255C231E913E640071EA79 /* StoriesStore.m in Sources */,

@@ -20,7 +20,7 @@
 }
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
-    return 0.3;
+    return 0.45;
 }
 
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
@@ -32,7 +32,7 @@
     
     // 1
     CGRect initialFrame = [transitionContext initialFrameForViewController:fromVC];
-    CGRect finalFrame = _destinationFrame;
+    CGRect finalFrame = CGRectMake(toVC.view.frame.size.width, 0, toVC.view.frame.size.width, toVC.view.frame.size.height);//_destinationFrame;
     
     // 2
     UIView *snapshot = [fromVC.view snapshotViewAfterScreenUpdates:false];
@@ -43,14 +43,15 @@
     [containerView addSubview:toVC.view];
     [containerView addSubview:snapshot];
     fromVC.view.hidden = YES;
-    
+    toVC.view.frame = CGRectMake(-100, 0, toVC.view.frame.size.width, toVC.view.frame.size.height);
     
     double duration = [self transitionDuration:transitionContext];
 
     [UIView animateWithDuration:duration animations:^{
         // 1
+        toVC.view.frame = CGRectMake(0, 0, toVC.view.frame.size.width, toVC.view.frame.size.height);
         snapshot.frame = finalFrame;
-        snapshot.alpha = 0.0;
+//        snapshot.alpha = 0.0;
         
     } completion:^(BOOL finished) {
         // 2

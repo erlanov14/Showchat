@@ -18,6 +18,7 @@
 @property (nonatomic,strong) NSString *author;
 @property (nonatomic,strong) NSString *backgroundImage;
 @property int watchCount;
+@property (nonatomic,strong) NSString *subtitle;
 
 @property (nonatomic,strong) NSMutableArray *messages;
 
