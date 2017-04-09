@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoriesCell3" rowHeight="231" id="mRz-Co-fIY" customClass="StoriesCell3">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="231"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mRz-Co-fIY" id="af3-Gn-bgY">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEG-9m-ZYz">
+                        <rect key="frame" x="141.5" y="0.0" width="233.5" height="229"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fake_g.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Gym-ro-1LN">
+                                <rect key="frame" x="0.0" y="0.0" width="233.5" height="229"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tJ4-O0-e2p">
+                                <rect key="frame" x="0.0" y="0.0" width="233.5" height="229"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.16146725170000001" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dead of Night" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RO-AZ-A6X">
+                                <rect key="frame" x="8" y="183.5" width="217.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Manni Fiews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="me6-le-b8o">
+                                <rect key="frame" x="8" y="205" width="217.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tJ4-O0-e2p" firstAttribute="top" secondItem="MEG-9m-ZYz" secondAttribute="top" id="053-Ow-NN1"/>
+                            <constraint firstItem="me6-le-b8o" firstAttribute="leading" secondItem="MEG-9m-ZYz" secondAttribute="leading" constant="8" id="0nw-bw-2FR"/>
+                            <constraint firstAttribute="trailing" secondItem="Gym-ro-1LN" secondAttribute="trailing" id="1aR-sm-VfG"/>
+                            <constraint firstItem="Gym-ro-1LN" firstAttribute="top" secondItem="MEG-9m-ZYz" secondAttribute="top" id="4f6-hN-APc"/>
+                            <constraint firstItem="Gym-ro-1LN" firstAttribute="leading" secondItem="MEG-9m-ZYz" secondAttribute="leading" id="7F9-Sf-did"/>
+                            <constraint firstAttribute="trailing" secondItem="tJ4-O0-e2p" secondAttribute="trailing" id="TKa-H9-j0K"/>
+                            <constraint firstAttribute="trailing" secondItem="8RO-AZ-A6X" secondAttribute="trailing" constant="8" id="X3r-vR-vne"/>
+                            <constraint firstItem="8RO-AZ-A6X" firstAttribute="leading" secondItem="MEG-9m-ZYz" secondAttribute="leading" constant="8" id="Zio-eN-1c6"/>
+                            <constraint firstAttribute="bottom" secondItem="Gym-ro-1LN" secondAttribute="bottom" id="hBL-yH-AK7"/>
+                            <constraint firstAttribute="bottom" secondItem="me6-le-b8o" secondAttribute="bottom" constant="8" id="j0N-TP-wUI"/>
+                            <constraint firstAttribute="trailing" secondItem="me6-le-b8o" secondAttribute="trailing" constant="8" id="lsB-Ll-Hyu"/>
+                            <constraint firstItem="me6-le-b8o" firstAttribute="top" secondItem="8RO-AZ-A6X" secondAttribute="bottom" id="pcb-Zk-G2v"/>
+                            <constraint firstItem="tJ4-O0-e2p" firstAttribute="leading" secondItem="MEG-9m-ZYz" secondAttribute="leading" id="uuJ-ih-Aqq"/>
+                            <constraint firstAttribute="bottom" secondItem="tJ4-O0-e2p" secondAttribute="bottom" id="z51-bM-fCp"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rY0-2O-biX">
+                        <rect key="frame" x="0.0" y="0.0" width="141.5" height="114.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fake_g.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="SR7-Lf-a58">
+                                <rect key="frame" x="0.0" y="0.0" width="141.5" height="115"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jjo-s6-4vx">
+                                <rect key="frame" x="0.0" y="0.0" width="141.5" height="115"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.15602616129999999" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dead of Night" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucF-6G-4d6">
+                                <rect key="frame" x="8" y="69.5" width="125.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Manni Fiews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48f-aA-9Su">
+                                <rect key="frame" x="8" y="91" width="125.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ucF-6G-4d6" firstAttribute="leading" secondItem="rY0-2O-biX" secondAttribute="leading" constant="8" id="8Jj-fa-aXT"/>
+                            <constraint firstAttribute="bottom" secondItem="SR7-Lf-a58" secondAttribute="bottom" id="99A-Xw-wK8"/>
+                            <constraint firstItem="SR7-Lf-a58" firstAttribute="top" secondItem="rY0-2O-biX" secondAttribute="top" id="AMq-Vt-UHT"/>
+                            <constraint firstItem="Jjo-s6-4vx" firstAttribute="leading" secondItem="rY0-2O-biX" secondAttribute="leading" id="AW6-TN-bCg"/>
+                            <constraint firstAttribute="bottom" secondItem="48f-aA-9Su" secondAttribute="bottom" constant="8" id="O1u-2P-z0E"/>
+                            <constraint firstAttribute="trailing" secondItem="SR7-Lf-a58" secondAttribute="trailing" id="Oke-1H-lY7"/>
+                            <constraint firstAttribute="trailing" secondItem="48f-aA-9Su" secondAttribute="trailing" constant="8" id="Xhh-jm-0uY"/>
+                            <constraint firstItem="ucF-6G-4d6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rY0-2O-biX" secondAttribute="top" constant="8" id="Xji-CE-Ap1"/>
+                            <constraint firstItem="Jjo-s6-4vx" firstAttribute="top" secondItem="rY0-2O-biX" secondAttribute="top" id="bIW-Lb-YUv"/>
+                            <constraint firstAttribute="trailing" secondItem="ucF-6G-4d6" secondAttribute="trailing" constant="8" id="d4a-Dt-ixm"/>
+                            <constraint firstAttribute="trailing" secondItem="Jjo-s6-4vx" secondAttribute="trailing" id="dSc-hd-ZJy"/>
+                            <constraint firstItem="48f-aA-9Su" firstAttribute="top" secondItem="ucF-6G-4d6" secondAttribute="bottom" id="f7X-7e-d8g"/>
+                            <constraint firstItem="SR7-Lf-a58" firstAttribute="leading" secondItem="rY0-2O-biX" secondAttribute="leading" id="fv9-V7-XPZ"/>
+                            <constraint firstItem="48f-aA-9Su" firstAttribute="leading" secondItem="rY0-2O-biX" secondAttribute="leading" constant="8" id="pLC-Dl-orZ"/>
+                            <constraint firstAttribute="bottom" secondItem="Jjo-s6-4vx" secondAttribute="bottom" id="zKG-Du-J8f"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B54-x1-jCU">
+                        <rect key="frame" x="0.0" y="115.5" width="141.5" height="115"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fake_g.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="lKO-Zx-8Ut">
+                                <rect key="frame" x="0.0" y="0.0" width="141.5" height="115"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TP-Cn-fwn">
+                                <rect key="frame" x="0.0" y="0.0" width="141.5" height="115"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.15602616129999999" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dead of Night" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvu-1E-Cvr">
+                                <rect key="frame" x="8" y="69.5" width="125.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Manni Fiews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEk-XM-t5q">
+                                <rect key="frame" x="8" y="91" width="125.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lKO-Zx-8Ut" secondAttribute="trailing" id="3vI-gX-nbs"/>
+                            <constraint firstItem="lvu-1E-Cvr" firstAttribute="leading" secondItem="B54-x1-jCU" secondAttribute="leading" constant="8" id="5al-Rf-DEs"/>
+                            <constraint firstItem="TEk-XM-t5q" firstAttribute="leading" secondItem="B54-x1-jCU" secondAttribute="leading" constant="8" id="A3y-X5-5et"/>
+                            <constraint firstItem="TEk-XM-t5q" firstAttribute="top" secondItem="lvu-1E-Cvr" secondAttribute="bottom" id="Dlr-w3-gaW"/>
+                            <constraint firstItem="7TP-Cn-fwn" firstAttribute="top" secondItem="B54-x1-jCU" secondAttribute="top" id="Ezd-Wy-53O"/>
+                            <constraint firstItem="lKO-Zx-8Ut" firstAttribute="top" secondItem="B54-x1-jCU" secondAttribute="top" id="Q5q-T3-FHU"/>
+                            <constraint firstAttribute="bottom" secondItem="7TP-Cn-fwn" secondAttribute="bottom" id="SCO-lJ-8Xs"/>
+                            <constraint firstAttribute="trailing" secondItem="7TP-Cn-fwn" secondAttribute="trailing" id="ahX-fU-GBa"/>
+                            <constraint firstItem="7TP-Cn-fwn" firstAttribute="leading" secondItem="B54-x1-jCU" secondAttribute="leading" id="cQD-80-qKs"/>
+                            <constraint firstAttribute="bottom" secondItem="TEk-XM-t5q" secondAttribute="bottom" constant="8" id="cge-2N-5E5"/>
+                            <constraint firstAttribute="trailing" secondItem="lvu-1E-Cvr" secondAttribute="trailing" constant="8" id="ePP-H1-hxs"/>
+                            <constraint firstItem="lKO-Zx-8Ut" firstAttribute="leading" secondItem="B54-x1-jCU" secondAttribute="leading" id="k6i-Xs-zVO"/>
+                            <constraint firstAttribute="bottom" secondItem="lKO-Zx-8Ut" secondAttribute="bottom" id="oEZ-1Q-WmI"/>
+                            <constraint firstItem="lvu-1E-Cvr" firstAttribute="top" relation="greaterThanOrEqual" secondItem="B54-x1-jCU" secondAttribute="top" constant="8" id="wYW-VG-Dpp"/>
+                            <constraint firstAttribute="trailing" secondItem="TEk-XM-t5q" secondAttribute="trailing" constant="8" id="zE8-r2-BZt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="B54-x1-jCU" firstAttribute="leading" secondItem="af3-Gn-bgY" secondAttribute="leading" id="DzR-JX-S6e"/>
+                    <constraint firstAttribute="trailing" secondItem="MEG-9m-ZYz" secondAttribute="trailing" id="NjQ-Sn-Ge5"/>
+                    <constraint firstItem="rY0-2O-biX" firstAttribute="leading" secondItem="af3-Gn-bgY" secondAttribute="leading" id="Pef-At-DGE"/>
+                    <constraint firstAttribute="bottom" secondItem="MEG-9m-ZYz" secondAttribute="bottom" constant="1" id="VhD-sg-ABg"/>
+                    <constraint firstItem="MEG-9m-ZYz" firstAttribute="leading" secondItem="rY0-2O-biX" secondAttribute="trailing" id="bbQ-zA-VG2"/>
+                    <constraint firstItem="rY0-2O-biX" firstAttribute="width" secondItem="MEG-9m-ZYz" secondAttribute="width" multiplier="1:1.65" id="bbs-Lj-TJG"/>
+                    <constraint firstItem="MEG-9m-ZYz" firstAttribute="leading" secondItem="B54-x1-jCU" secondAttribute="trailing" id="gCG-0P-sDf"/>
+                    <constraint firstItem="rY0-2O-biX" firstAttribute="top" secondItem="af3-Gn-bgY" secondAttribute="top" id="rD4-rd-bHz"/>
+                    <constraint firstAttribute="bottom" secondItem="B54-x1-jCU" secondAttribute="bottom" id="rHg-8T-OaB"/>
+                    <constraint firstItem="B54-x1-jCU" firstAttribute="height" secondItem="rY0-2O-biX" secondAttribute="height" id="uIW-E2-aut"/>
+                    <constraint firstItem="B54-x1-jCU" firstAttribute="top" secondItem="rY0-2O-biX" secondAttribute="bottom" constant="1" id="uKo-5d-5Xu"/>
+                    <constraint firstItem="MEG-9m-ZYz" firstAttribute="top" secondItem="af3-Gn-bgY" secondAttribute="top" id="w6Z-5V-JYP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="author1" destination="48f-aA-9Su" id="sCr-Qs-KfT"/>
+                <outlet property="author2" destination="TEk-XM-t5q" id="mQU-Kg-lIv"/>
+                <outlet property="author3" destination="me6-le-b8o" id="uAv-QD-TBa"/>
+                <outlet property="grV1" destination="Jjo-s6-4vx" id="T3c-6I-tXg"/>
+                <outlet property="grV2" destination="7TP-Cn-fwn" id="Mep-fp-Vf2"/>
+                <outlet property="grV3" destination="tJ4-O0-e2p" id="NVw-Vq-HBa"/>
+                <outlet property="imgV1" destination="SR7-Lf-a58" id="fz1-Na-GHQ"/>
+                <outlet property="imgV2" destination="lKO-Zx-8Ut" id="ZUz-S0-Wz4"/>
+                <outlet property="imgV3" destination="Gym-ro-1LN" id="WIt-3P-CkO"/>
+                <outlet property="title1" destination="ucF-6G-4d6" id="tiB-yC-Did"/>
+                <outlet property="title2" destination="lvu-1E-Cvr" id="zgr-yy-vi6"/>
+                <outlet property="title3" destination="8RO-AZ-A6X" id="AYr-cH-j2P"/>
+            </connections>
+            <point key="canvasLocation" x="-2.5" y="-61.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="fake_g.jpeg" width="259" height="194"/>
+    </resources>
+</document>
